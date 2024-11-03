@@ -50,14 +50,19 @@
         <div class=" border-2 border-blue-500 pt-16">
 
             <div class=" border-2 border-red-500  flex justify-center gap-5 pb-8">
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">Donation</button>
 
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
+                <!-- Action Buttons -->
+
+                <button id="btn-show-donation" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">Donation</button>
+
+                <button id="btn-show-history" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
 
 
             </div>
 
-            <div class="cards container my-3  flex flex-col gap-10">
+            <!-- Donation part starts here -->
+
+            <div  id="donation-form" class="  hidden  cards container my-3  flex flex-col gap-10">
 
 
                 <!-- Card 1      -->
@@ -170,6 +175,25 @@
 
             </div>
 
+            <!-- Donation part ENDSSSSSSS here -->
+
+        
+            <!-- History part Starts here -->
+             <div id="history-form"  class="hidden">
+                <h1 class="text-5xl"> HISTORYYY </h1>
+                <h1 class="text-5xl"> HISTORYYY </h1>
+                <h1 class="text-5xl"> HISTORYYY </h1>
+                <h1 class="text-5xl"> HISTORYYY </h1>
+
+
+
+
+             </div>
+            <!-- History part ends here -->
+
+
+
+
         </div>
 
      </div>
@@ -180,5 +204,6 @@
     </main>
 
     <script src="js/donation.js" defer></script>
+    <script src="js/features.js"></script>
 </body>
 </html>
