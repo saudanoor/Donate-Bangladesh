@@ -41,6 +41,32 @@ document.getElementById('donate-card-1').addEventListener('click', function(even
 
         document.getElementById('top-total-Balance').innerText= newTotalBalance;
 
+        //add to History
+
+        const p =document.createElement('p');
+        // p.innerText = `Added: ${addMonInputOneF} New balance: ${newBalanceCard1}`;
+        // console.log(p);
+
+        // p.innerHTML= `
+        // <h4 class = "text-2xl font-bold my-4">Added: ${addMonInputOneF} New balance: ${newBalanceCard1} </h4>
+        // `
+
+        p.innerHTML= `
+
+        <div class="border-2 border-red-500 my-4">
+
+        <h4 class = "text-2xl font-bold my-4">Added: ${addMonInputOneF} New balance: ${newBalanceCard1} </h4>
+
+        </div>
+        `
+        console.log(p);
+
+
+
+
+
+        document.getElementById('history-card').appendChild(p);
+
 
 
 
