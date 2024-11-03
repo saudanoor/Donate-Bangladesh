@@ -37,7 +37,8 @@
             </div>
             <div class="navbar-end gap-2 text-[rgba(17,17,17,0.7)]   text-lg font-semibold">
                 <img src="assets/coin.png" alt="">
-                9400
+                <!-- 9400 -->
+                <p id="top-total-Balance">9400</p>
             </div>
           </div>
          <!-- Navbar Ends Here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -72,7 +73,8 @@
 
                             <img src="assets/coin.png" alt="">
                             
-                            9400
+                            <!-- 0 -->
+                            <p id="current-money-card-1">0</p>
 
                         </div>
 
@@ -82,9 +84,9 @@
                         <p class="text-sm  "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
                         <div class="flex flex-col gap-2 ">
-                           <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs mt-1" />
+                           <input  id="add-money" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs mt-1" />
 
-                            <button class="btn btn-xs sm:btn-sm md:btn-md  bg-[#B4F461]">Donate Now</button>
+                            <button  id="donate-card-1" class="btn btn-xs sm:btn-sm md:btn-md  bg-[#B4F461]">Donate Now</button>
                         </div>
 
                     </div>
@@ -92,7 +94,9 @@
                 </div>
 
 
-                <!-- Card 2      -->
+                <!-- Card 2      starts here-->
+
+
                 <div class=" each-card  border-2 border-yellow-500 md:flex md:gap-7 justify-center ">
                     <div class=" photo pt-1">
                         <img src="assets/feni.png"  class="w-[422px] h-[289px] rounded-xl object-cover" alt="">
@@ -124,8 +128,13 @@
 
                 </div>
 
+                 <!-- Card 2      ENDSSS   here-->
 
-                <!-- Card 3      -->
+
+
+
+                <!-- Card 3  starts here        -->
+
                 <div class=" each-card  border-2 border-yellow-500 md:flex md:gap-7 justify-center ">
                     <div class=" photo pt-1">
                         <img src="assets/feni.png"  class="w-[422px] h-[289px] rounded-xl object-cover" alt="">
@@ -155,7 +164,9 @@
 
                     </div>
 
-                </div>                
+                </div>   
+                
+                <!-- Card 3  ENDSSSSSSSSS here        -->
 
             </div>
 
@@ -167,5 +178,7 @@
 
 
     </main>
+
+    <script src="js/donation.js" defer></script>
 </body>
 </html>
