@@ -13,18 +13,11 @@ document.getElementById('donate-card-2').addEventListener('click', function(even
     //check for empty field or negative value
     if(addMonInputTwo==='' || parseFloat(addMonInputTwo)<=0){
         alert('Please enter a valid amount');
+        document.getElementById('add-money2').value = '';
         return;
     }
-
-    // Display the modal and update its content
-   const modal = document.getElementById('donation-modal');
-
-   modal.showModal(); // Show the modal
-
-   // Add an event to hide the modal when the close button is clicked
-   document.getElementById('close-modal-btn').onclick = function() {
-    modal.close(); // Hide the modal
-    };
+    
+ 
 
 
     // //check for greater than current total balance
@@ -141,9 +134,24 @@ document.getElementById('donate-card-2').addEventListener('click', function(even
         // Clear the input field
         document.getElementById('add-money2').value = '';
 
+
+
+        // Display the modal and update its content
+   const modal = document.getElementById('donation-modal');
+
+   modal.showModal(); // Show the modal
+
+   // Add an event to hide the modal when the close button is clicked
+   document.getElementById('close-modal-btn').onclick = function() {
+    modal.close(); // Hide the modal
+    };
+
+
+
     }
     else{
         alert('Please Enter  a Valid Amount');
+        document.getElementById('add-money2').value = '';
     }
 
 })
