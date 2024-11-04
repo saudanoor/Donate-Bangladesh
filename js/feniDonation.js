@@ -1,36 +1,34 @@
-console.log('donations page added');
-
 // Card One (Noakhali)
-document.getElementById('donate-card-1').addEventListener('click', function(event){
+document.getElementById('donate-card-2').addEventListener('click', function(event){
 
     event.preventDefault();
 
     console.log('button added');
 
-    // step -2 get the donation money to be added
-    const addMonInputOne = document.getElementById('add-money').value;
-    console.log(addMonInputOne);
+    // step -2 get the donation money to be added addMonInputTwo
+    const addMonInputTwo = document.getElementById('add-money2').value;
+    console.log(addMonInputTwo);
 
 
     //check for empty field or negative value
-    if(addMonInputOne==='' || parseFloat(addMonInputOne)<=0){
+    if(addMonInputTwo==='' || parseFloat(addMonInputTwo)<=0){
         alert('Please enter a valid amount');
         return;
     }
 
     // //check for greater than current total balance
 
-    // if(addMonInputOneF > totalBalanceF){
+    // if(addMonInputTwoF > totalBalanceF){
     //     alert('Insufficient balance! The donation amount exceeds your available balance.');
     //     return;
     // }
 
 
 
-    if(addMonInputOne >=0){
+    if(addMonInputTwo >=0){
         console.log('money is greater than 0');
         // step- 4 get the current balance, Total Balance
-        const currentCard1 = document.getElementById('current-money-card-1').innerText;
+        const currentCard1 = document.getElementById('current-money-card-2').innerText;
         console.log(currentCard1);
 
         const totalBalance = document.getElementById('top-total-Balance').innerText;
@@ -42,22 +40,22 @@ document.getElementById('donate-card-1').addEventListener('click', function(even
 
         //parseFloat these two, then add
         //parseFloat total balance, then subtract 
-        const addMonInputOneF = parseFloat(addMonInputOne);
+        const addMonInputTwoF = parseFloat(addMonInputTwo);
         const currentCard1F = parseFloat(currentCard1);
 
         const totalBalanceF = parseFloat(totalBalance);
 
 
-        const newBalanceCard1 = addMonInputOneF + currentCard1F;
+        const newBalanceCard1 = addMonInputTwoF + currentCard1F;
         console.log(newBalanceCard1);
 
-        const newTotalBalance = totalBalanceF - addMonInputOneF;
+        const newTotalBalance = totalBalanceF - addMonInputTwoF;
         console.log(newTotalBalance);
 
 
 
         //Update new balance in the Card 1 UI and Total Balance
-        document.getElementById('current-money-card-1').innerText = newBalanceCard1; 
+        document.getElementById('current-money-card-2').innerText = newBalanceCard1; 
 
         
 
@@ -84,7 +82,7 @@ document.getElementById('donate-card-1').addEventListener('click', function(even
 
         });
 
-        const cardOneTitle = document.getElementById('card-1-title').innerText;
+        const cardOneTitle = document.getElementById('card-2-title').innerText;
 
         
 
@@ -110,7 +108,7 @@ document.getElementById('donate-card-1').addEventListener('click', function(even
            
 
            <h4 class = "text-lg sm:tex-xl  md:text-2xl font-bold mb-2 md:mb-4 "> 
-           ${addMonInputOneF} Taka is Donated for  ${cardOneTitle}
+           ${addMonInputTwoF} Taka is Donated for  ${cardOneTitle}
            </h4>
 
             <p class= " text-gray-500 text-sm sm:text-base "> Date: ${formatDate} (Bangladesh Standard Time)</p>
@@ -130,19 +128,11 @@ document.getElementById('donate-card-1').addEventListener('click', function(even
 
 
         // Clear the input field
-        document.getElementById('add-money').value = '';
+        document.getElementById('add-money2').value = '';
 
     }
     else{
         alert('no');
     }
-
-
-
-    
-
-
-
-
 
 })
