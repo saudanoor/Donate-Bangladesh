@@ -20,14 +20,15 @@ document.getElementById('donate-card-1').addEventListener('click', function(even
 
     
 
-// Display the modal and update its content
-    // const modal = document.getElementById('donation-modal');
+   // Display the modal and update its content
+   const modal = document.getElementById('donation-modal');
 
-    // modal.showModal();
+   modal.showModal(); // Show the modal
 
-    // document.getElementById('close-modal-btn').onclick=function(){
-    //     modal.close();
-    // }
+   // Add an event to hide the modal when the close button is clicked
+   document.getElementById('close-modal-btn').onclick = function() {
+    modal.close(); // Hide the modal
+    };
 
 
 

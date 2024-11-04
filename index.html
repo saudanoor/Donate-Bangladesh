@@ -67,18 +67,24 @@
 
 <!-- Modal start -->
 
-<!-- <div id="donation-modal" class="modal modal-bottom sm:modal-middle" >
-    <div class="modal-box">
-        <h3 class="" >Congrats!</h3>
-        <img src="assets/coin.png" alt="">
-        <h3>You Have Donated for Humankind  </h3>
-        <h3>Successfully!</h3>
-        <div class="modal-action" >
-            <button id="close-modal-btn" >Close Confirmation</button>
-        </div>
-    </div>
+<dialog id="donation-modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box flex flex-col items-center">
+      <h3 class="text-4xl font-bold">Congrats!</h3>
+      <div class="my-3">
+      <img src="assets/coin.png" alt="">
+      </div>
+      <!-- <p class="py-4">Your donation of <span id="modal-donation-amount"></span> Taka for <span id="modal-donation-title"></span> is being processed.</p> -->
+      <p class="py-4 text-gray-500">You Have Donated for Humankind</p>
+      <h1 class="text-lg font-bold">Successfully</h1>
 
-</div> -->
+      <div class="modal-action">
+        <button id="close-modal-btn" class="btn">Close Confirmation</button>
+      </div>
+    </div>
+  </dialog>
+  
+
+</div> 
 
 
 

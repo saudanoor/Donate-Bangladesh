@@ -16,6 +16,17 @@ document.getElementById('donate-card-2').addEventListener('click', function(even
         return;
     }
 
+    // Display the modal and update its content
+   const modal = document.getElementById('donation-modal');
+
+   modal.showModal(); // Show the modal
+
+   // Add an event to hide the modal when the close button is clicked
+   document.getElementById('close-modal-btn').onclick = function() {
+    modal.close(); // Hide the modal
+    };
+
+
     // //check for greater than current total balance
 
     // if(addMonInputTwoF > totalBalanceF){
