@@ -18,6 +18,22 @@ document.getElementById('donate-card-1').addEventListener('click', function(even
         return;
     }
 
+    
+
+// Display the modal and update its content
+    // const modal = document.getElementById('donation-modal');
+
+    // modal.showModal();
+
+    // document.getElementById('close-modal-btn').onclick=function(){
+    //     modal.close();
+    // }
+
+
+
+
+
+
     // //check for greater than current total balance
 
     // if(addMonInputOneF > totalBalanceF){
@@ -134,7 +150,7 @@ document.getElementById('donate-card-1').addEventListener('click', function(even
 
     }
     else{
-        alert('no');
+        alert('Please Enter  a Valid Amount');
     }
 
 

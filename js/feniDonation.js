@@ -132,7 +132,7 @@ document.getElementById('donate-card-2').addEventListener('click', function(even
 
     }
     else{
-        alert('no');
+        alert('Please Enter  a Valid Amount');
     }
 
 })
